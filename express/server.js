@@ -10,22 +10,9 @@ const serverless = require('serverless-http');
 const router = express.Router();
 
 
-// router.get('/', (req, res) => {
-//   res.writeHead(200, { 'Content-Type': 'text/html' });
-//   res.write('<h1>Hello from Express.js!</h1>');
-//   res.end();
-// });
 app.use('/', express.static(path.resolve('views'))); //html
 app.use('/', express.static(path.resolve('public'))); // js, css, images
 app.use('/', router);
-
-
-app.use('/.netlify/functions/server', router);  // path must route to lambda
-
-
-
-
-
 
 
 const server = app.listen(process.env.PORT || 5000, () => {
