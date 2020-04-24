@@ -6,9 +6,6 @@
 # Deploy Preview context:
 # All deploys generated from a pull/merge request
 # will inherit these settings.
-[context.deploy-preview.environment]
-  CLIENT_ACCESS_TOKEN="a72a7ec6b94f4deba71f7fe63adac850"
-  DEV_ACCESS_TOKEN="5b7f480c0f274bd0848132a7a2fd99ac"
 
 # Branch deploy context:
 # All deploys that are not from a pull/merge request
